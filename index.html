@@ -3,6 +3,10 @@ layout: default
 title: Kids Programming lessons using Dash and Blocky
 ---
 <ul class="posts">
-  <li><a href="/lessons/lesson1" title="Dash lesson 1 - Say hello
-">Dash lesson 1 - Say hello</a></li>
+  {% for lesson in site.lessons %}
+    <li>
+      <a href="{{ lesson.url }}">{{ lesson.title }}</a>
+      <a href="{{ lesson.url }}" title="{{ lesson.title }}">{{ lesson.title }}</a>
+    </li>
+  {% endfor %}  
 </ul>
