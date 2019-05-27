@@ -5,7 +5,6 @@ title: Kids Programming lessons using Dash and Blocky
 <ul class="posts">
   {% for lesson in site.lessons %}
     <li>
-      <a href="{{ lesson.url }}">{{ lesson.title }}</a>
       <a href="{{ lesson.url }}" title="{{ lesson.title }}">{{ lesson.title }}</a>
     </li>
   {% endfor %}  

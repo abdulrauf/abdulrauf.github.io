@@ -1,2 +1,6 @@
 name: School Kids Programming Lessons
 markdown: kramdown
+
+collections:
+  lessons:
+    output: true
