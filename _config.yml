@@ -9,9 +9,9 @@ collections:
   lessons:
     output: true
 
-# plugins:
-#   - jekyll-include-cache
-#   - minimal-mistakes-jekyll
+plugins:
+  - jekyll-include-cache
+    minimal-mistakes-jekyll
 
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
