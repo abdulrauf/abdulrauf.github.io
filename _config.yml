@@ -24,6 +24,7 @@ defaults:
   - values:
       author_profile: true
       read_time: true
+      words_per_minute: 50
 
 author:
   name: "Abdul Rauf"
