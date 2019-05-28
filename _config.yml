@@ -11,9 +11,8 @@ collections:
 
 plugins:
   - jekyll-include-cache
-    minimal-mistakes-jekyll
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.16.4"
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 locale: "en-AU"
 
