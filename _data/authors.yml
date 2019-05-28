@@ -1,0 +1,16 @@
+Abdul Rauf:
+  name        : "Abdul Rauf"
+  bio         : "Experienced Senior Developer with a demonstrated history of working in the higher education industry as lead developer and scrum master on various projects. Skilled in web development using Ruby on Rails and various Javascript frameworks with over 11 years experience."
+  avatar      : "/images/bio-abdul.jpg"
+  location    : "Adelaide, Australia" 
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/abdulrauf"
+
+Bilal Rauf:
+  name        : "Bilal Rauf"
+  bio         : "Year 3 student at ValePark Primary School"
+  avatar      : "/images/bio-bilal.jpg"
+  location    : "Adelaide, Australia" 
+

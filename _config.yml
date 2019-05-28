@@ -1,6 +1,44 @@
-name: School Kids Programming Lessons
+title: School Kids Programming Lessons
+name: Abdul Rauf and Bilal Rauf
+description: "Sharing programming experiences with my son."
+url: https://abdulrauf.github.io/
+repository: "abdulrauf/abdulrauf.github.io.git"
 markdown: kramdown
 
 collections:
   lessons:
     output: true
+
+# plugins:
+#   - jekyll-include-cache
+#   - minimal-mistakes-jekyll
+
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+locale: "en-AU"
+
+header:
+  teaser: /images/teaser.jpg
+# logo: "/assets/images/88x88.png"
+
+defaults:
+  - values:
+      author_profile: true
+      read_time: true
+
+author:
+  name: "Abdul Rauf"
+  bio         : "Experienced Senior Developer with a demonstrated history of working in the higher education industry as lead developer and scrum master on various projects. Skilled in web development using Ruby on Rails and various Javascript frameworks with over 11 years experience."
+  avatar      : "/images/bio-abdul.jpg"
+  location    : "Adelaide, Australia" 
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/abdulrauf"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/abdulrauf"
+    
