@@ -39,5 +39,69 @@ Soon we'll be publishing the video for this game. Please stay tuned for more upd
 <h2>Code</h2>
 
 <pre>
+import pgzrun
+
+alien = Actor('alien')
+alien.topright = 500,500
+alien.score = 0
+alien.lives = 5
+
+WIDTH = 500
+HEIGHT = alien.height + 500
+
+def draw():
+    screen.clear()
+    alien.draw()
+    screen.draw.text(
+        str("Score: " + str(alien.score)),
+        color='white',
+        topleft=(10, 10),
+        fontsize=35,
+        shadow=(1, 1)
+    ) 
+    screen.draw.text(
+        str("Lives: " + str(alien.lives)),
+        color='white',
+        topleft=(10, 40),
+        fontsize=35,
+        shadow=(1, 1)
+    )
+    
+def update():
+    if alien.lives == 0:
+        sounds.buzzer.play()
+        return
+    alien.top -= 3
+    alien.right -= 3
+
+    if alien.top < 0:
+        alien.top = HEIGHT
+
+    if alien.right < 0:
+        alien.right = WIDTH
+
+
+def on_mouse_down(pos):
+    if alien.lives == 0:
+        return
+    if alien.collidepoint(pos):
+        set_alien_hurt()
+    else:
+        alien.lives -= 1
+        
+def set_alien_normal():
+    alien.image = 'alien'
+
+def set_alien_hurt():
+    alien.image = 'alien_hurt'
+    sounds.eep.play()
+    alien.score += 5
+    clock.schedule_unique(set_alien_normal, 1.0)
+        
+pgzrun.go()
+
+
+
+
 
 </pre>
